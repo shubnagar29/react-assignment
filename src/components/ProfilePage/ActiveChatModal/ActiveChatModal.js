@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import "./ActiveChatModal.css";
+
+//component
 import Avatar from "../../Common/Avatar/Avatar";
+
 import sendButtonSvg from "../../../images/send.svg";
 import { UserContext } from "../../../context/UserContext";
 
@@ -38,6 +41,8 @@ const ActiveChatModal = ({ index, activeChat }) => {
           ></i>
         </div>
       </div>
+
+      {/* chat message with user can be dynamic */}
       <div className="active-chat-modal-messages">
         <div className="selected-users-message">
           <p>Lorem ipsum dolor, sit amet!</p>
@@ -49,6 +54,7 @@ const ActiveChatModal = ({ index, activeChat }) => {
           <p>Lorem ipsum dolor, sit amet!</p>
         </div>
       </div>
+
       <div className="active-chat-modal-input">
         <input type="text" />
         <img

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Header.css";
+
+//component
 import Modal from "../Modal/Modal";
 import Avatar from "../../Common/Avatar/Avatar";
 

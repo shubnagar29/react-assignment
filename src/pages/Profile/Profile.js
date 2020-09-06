@@ -1,13 +1,16 @@
 import React, { useContext, useState, useEffect } from "react";
-import { UserContext } from "../../context/UserContext";
+import "./Profile.css";
 import { useParams } from "react-router-dom";
+
+//components
 import SideMenu from "../../components/ProfilePage/SideMenu/SideMenu";
 import Header from "../../components/ProfilePage/Header/Header";
-import "./Profile.css";
 import SelectedUserDetails from "../../components/ProfilePage/SelectedUserDetails/SelectedUserDetails";
 import ChatModal from "../../components/ProfilePage/ChatModal/ChatModal";
 import ActiveChatModal from "../../components/ProfilePage/ActiveChatModal/ActiveChatModal";
 import Loader from "../../components/Common/Loader/Loader";
+
+import { UserContext } from "../../context/UserContext";
 
 const Profile = ({ history }) => {
   const [activeLink, setActiveLink] = useState("Profile");
@@ -47,9 +50,10 @@ const Profile = ({ history }) => {
   };
 
   useEffect(() => {
+    //if no selected user, from userState call to localstorage
     !selectedUser && getSelectedUser(id, history);
     return closeAllActiveChats();
-  }, [selectedUser]);
+  }, []);
 
   return (
     <>

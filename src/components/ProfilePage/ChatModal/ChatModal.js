@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import "./ChatModal.css";
+//component
+import ChatModalUsers from "./ChatModalUsers";
+
 import ChatSvg from "../../../images/chat.svg";
 import { UserContext } from "../../../context/UserContext";
-import ChatModalUsers from "./ChatModalUsers";
 
 const ChatModal = ({ openChatModal, toggleChatModal }) => {
   const context = useContext(UserContext);

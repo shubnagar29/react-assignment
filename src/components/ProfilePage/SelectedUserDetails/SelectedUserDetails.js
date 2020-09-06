@@ -1,7 +1,10 @@
 import React from "react";
 import "./SelectedUserDetails.css";
+
+//component
 import AddressMap from "../AddressMap/AddressMap";
 
+//display selected user data coming from api
 const SelectedUserDetails = ({ user }) => {
   return (
     <div className="user-details">

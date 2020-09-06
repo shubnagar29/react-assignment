@@ -1,6 +1,9 @@
 import React from "react";
 import "./SideMenu.css";
+
+//component
 import SideMenuItem from "./SideMenuItem";
+
 import HomeSvg from "../../../images/home.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

@@ -3,6 +3,7 @@ import L from "leaflet";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import "./AddressMap.css";
 
+//from leaflet library
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -31,6 +32,7 @@ const AddressMap = ({ lat, lng }) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
+      {/* in api we have text hotlink-ok in geo-coordinate */}
       <Marker
         position={[
           lat.includes("hotlink-ok") ? 18.66 : lat,

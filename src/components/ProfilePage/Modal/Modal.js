@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useContext } from "react";
 import "./Modal.css";
+
+import Avatar from "../../Common/Avatar/Avatar";
+
 import { withRouter } from "react-router-dom";
 import { UserContext } from "../../../context/UserContext";
-import Avatar from "../../Common/Avatar/Avatar";
 
 const Modal = ({ image, email, name, history }) => {
   const context = useContext(UserContext);

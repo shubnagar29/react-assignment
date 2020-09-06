@@ -67,8 +67,9 @@ const UserState = ({ children }) => {
           ...state,
           selectedUser,
           users,
+          loading: false,
         });
-      }, 1);
+      }, 0.1);
       if (!selectedUser) {
         history.push("/");
       }
@@ -82,6 +83,7 @@ const UserState = ({ children }) => {
     }
   };
 
+  //opening user chat modal
   const activateChat = (user) => {
     const index = state.activeChats.findIndex(
       (chat) => chat.user.id === user.id
@@ -108,6 +110,7 @@ const UserState = ({ children }) => {
     });
   };
 
+  //maximize or minimize
   const toggleActiveChat = (id) => {
     const updatedActiveChats = [...state.activeChats];
     const index = updatedActiveChats.findIndex((chat) => chat.user.id === id);

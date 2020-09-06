@@ -1,9 +1,11 @@
 import React, { useContext, useEffect } from "react";
 import "./Home.css";
-import { UserContext } from "../../context/UserContext";
-import backgroundSvg from "../../images/background.svg";
+//components
 import UserDetail from "../../components/HomePage/UserDetail/UserDetail";
 import Loader from "../../components/Common/Loader/Loader";
+
+import { UserContext } from "../../context/UserContext";
+import backgroundSvg from "../../images/background.svg";
 
 const Home = ({ history }) => {
   const context = useContext(UserContext);
