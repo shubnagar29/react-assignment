@@ -30,6 +30,7 @@ const UserState = ({ children }) => {
       //   console.log(data.users);
       //success
       if (data) {
+        localStorage.setItem("users", JSON.stringify(data.users));
         setTimeout(() => {
           setState({
             ...state,
@@ -56,16 +57,29 @@ const UserState = ({ children }) => {
   };
 
   //getting the user who was selected
-  const getSelectedUser = (id) => {
-    // if (!state.user) {
-    //   getAllUsers();
-    // }
-    const selectedUser =
-      state.users && state.users.find((user) => user.id === id);
-    setState({
-      ...state,
-      selectedUser,
-    });
+  const getSelectedUser = (id, history) => {
+    if (!state.users) {
+      const users = JSON.parse(localStorage.getItem("users"));
+      const selectedUser =
+        users && users.find((user) => user.id === parseFloat(id));
+      setTimeout(() => {
+        setState({
+          ...state,
+          selectedUser,
+          users,
+        });
+      }, 1);
+      if (!selectedUser) {
+        history.push("/");
+      }
+    } else {
+      const selectedUser =
+        state.users && state.users.find((user) => user.id === id);
+      setState({
+        ...state,
+        selectedUser,
+      });
+    }
   };
 
   const activateChat = (user) => {
