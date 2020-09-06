@@ -1,0 +1,61 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-svg-1 {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.background-svg-1 img,
+.background-svg-2 img {
+  width: 100%;
+}
+
+.background-svg-2 {
+  position: absolute;
+  top: 20px;
+  z-index: -10;
+  opacity: 0.4;
+}
+
+.users-card {
+  width: 520px;
+  height: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.13);
+}
+
+.users-card-title {
+  height: 120px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+}
+
+.users-card-title p {
+  opacity: 0.6;
+  font-size: 1.1rem;
+}
+
+.users {
+  overflow-y: scroll;
+  width: 100%;
+  padding: 0 25px 0 25px;
+}

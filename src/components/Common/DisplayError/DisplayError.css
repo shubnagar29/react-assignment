@@ -1,0 +1,14 @@
+.display-error-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.display-error-message {
+  border: 5px solid black;
+  padding: 2rem;
+  font-size: 30px;
+}

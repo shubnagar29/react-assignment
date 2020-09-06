@@ -1,0 +1,36 @@
+.profile-header {
+  width: 100%;
+}
+
+.profile-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-header-content p {
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.profile-header-user {
+  display: flex;
+  /* width: 150px; */
+  /* justify-content: space-between; */
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-header-user p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.profile-header-hr {
+  border: none;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 1px;
+}

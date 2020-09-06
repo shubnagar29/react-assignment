@@ -1,0 +1,92 @@
+.active-chat-modal {
+  position: fixed;
+  bottom: 0;
+  z-index: 1003;
+  width: 225px;
+  height: 300px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.active-chat-modal-header {
+  background-color: rgb(44, 101, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 40px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  cursor: pointer;
+  /* padding: 0 5px 0 5px; */
+}
+
+.active-chat-modal-header-left,
+.active-chat-modal-header-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 175px;
+}
+
+.active-chat-modal-header-left p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.active-chat-modal-header-right {
+  width: 60px;
+}
+
+.active-chat-modal-messages {
+  border-left: 1px solid rgba(44, 101, 200, 0.8);
+  border-right: 1px solid rgba(44, 101, 200, 0.8);
+  height: 220px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.active-chat-modal-messages p {
+  font-size: 14px;
+  opacity: 0.7;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.selected-users-message {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.other-users-message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selected-users-message p {
+  background-color: rgba(231, 199, 156, 0.3);
+}
+
+.other-users-message p {
+  background-color: rgba(223, 219, 219, 0.4);
+}
+
+.active-chat-modal-input {
+  position: relative;
+}
+
+.active-chat-modal-input input {
+  width: 100%;
+  height: 40px;
+}
+
+.active-chat-modal-send-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

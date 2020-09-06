@@ -1,0 +1,42 @@
+.profile-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 100vw;
+  height: 100vh;
+  border: 1px solild black;
+}
+
+.profile-sidemenu {
+  grid-column: 1/4;
+  grid-row: 1/7;
+}
+
+.profile-header {
+  grid-column: 4/13;
+  grid-row: 1/2;
+}
+
+.display-user-details {
+  grid-column: 4/13;
+  grid-row: 2/7;
+  width: 100%;
+  height: 100%;
+}
+
+.display-coming-soon {
+  grid-column: 4/13;
+  grid-row: 2/7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-coming-soon h1 {
+  font-size: 80px;
+  opacity: 0.4;
+  color: darkgray;
+}

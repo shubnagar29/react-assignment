@@ -1,0 +1,50 @@
+.profile-sidemenu {
+  background: linear-gradient(
+    180deg,
+    rgba(56, 91, 200, 1) 0%,
+    rgba(56, 91, 200, 1) 39%,
+    rgba(112, 44, 200, 1) 81%
+  );
+  height: 100%;
+  width: 250px;
+  border-radius: 25px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  position: relative;
+}
+
+.profile-sidemenu p {
+  text-align: start;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px 0 10px 0;
+  cursor: pointer;
+}
+
+.profile-hr {
+  border: none;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 2px;
+}
+
+.active-pointer {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: -42.5px;
+  top: 6px;
+}
+
+.active-pointer i {
+  opacity: 0.8;
+}
+
+.home-link {
+  position: absolute;
+  top: 20px;
+}
